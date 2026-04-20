@@ -1,0 +1,40 @@
+{
+  "name": "punto-de-venta",
+  "version": "0.1.0",
+  "description": "Sistema POS para carnicería y fiambrería",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "node -e \"delete process.env.ELECTRON_RUN_AS_NODE; const {spawnSync}=require('child_process'); spawnSync('npx', ['electron-vite','dev'], {stdio:'inherit',env:process.env,shell:true})\"",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "package": "electron-vite build && electron-builder"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.6.0",
+    "drizzle-orm": "^0.31.0",
+    "node-thermal-printer": "^4.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^3.8.1",
+    "sql.js": "^1.14.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@electron-toolkit/tsconfig": "^1.0.1",
+    "@electron/rebuild": "^4.0.3",
+    "@types/better-sqlite3": "^7.6.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@types/sql.js": "^1.4.11",
+    "@vitejs/plugin-react": "^4.3.1",
+    "drizzle-kit": "^0.22.0",
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3",
+    "electron-rebuild": "^3.2.9",
+    "electron-vite": "^2.3.0",
+    "node-gyp": "^10.3.1",
+    "sass": "^1.77.6",
+    "typescript": "^5.5.2",
+    "vite": "^5.3.1"
+  }
+}
